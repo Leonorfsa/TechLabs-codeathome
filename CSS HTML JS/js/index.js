@@ -20,7 +20,7 @@ function submitFunction(){
   from_button = document.getElementById("id_button_From");
   to_button   = document.getElementById("id_button_To");
 
-  if(destinations.includes(to_button.value) && destinations.includes(from_button.value)){
+  if(destinations.includes(to_button.value) && destinations.includes(from_button.value) && (to_button.value != from_button.value)){
     form = document.getElementById("id_form");
     form.action = "pages/FromTo.html";
   }
@@ -40,8 +40,10 @@ function infoFunction(){
   var ToCountry =   urlParams.get("ToName");
   var FromCountry_data = countries_data[FromCountry];
   var ToCountry_data = countries_data[ToCountry];
+  var CountryConnection = country_connections[FromCountry+" - "+ToCountry];
 
   // info.innerHTML = "Just fly from "+FromCountry+" to "+ToCountry+" you are safe=)";
-  info.innerHTML = "Be sure to check the website "+ToCountry_data.url+" for latest info";
+  // info.innerHTML = "Be sure to check the website "+ToCountry_data.url+" for latest info";
+  info.innerHTML = "Just fly from "+FromCountry+" to "+ToCountry+" just don't forget to "+CountryConnection;
 }
 //////////////////////////////////////////////////////////////////////
