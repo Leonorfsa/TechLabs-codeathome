@@ -4,9 +4,8 @@ window.onload = function(){
   var options = '';
 
   for (var i = 0; i < destinations.length; i++) {
-    options += '<option value="' + destinations[i] + '" />';
+    options += '<option value="' + destinations[i] + '"/>';
   }
-
   document.getElementById('FromButton').innerHTML = options;
   document.getElementById('ToButton').innerHTML = options;
 }
@@ -21,7 +20,7 @@ function submitFunction(){
   to_button   = document.getElementById("id_button_To");
 
   if(destinations.includes(to_button.value) && destinations.includes(from_button.value) && (to_button.value != from_button.value)){
-    form = document.getElementById("id_form");
+    var form = document.getElementById("id_form");
     form.action = "pages/FromTo.html";
   }
   else{
@@ -44,6 +43,6 @@ function infoFunction(){
 
   // info.innerHTML = "Just fly from "+FromCountry+" to "+ToCountry+" you are safe=)";
   // info.innerHTML = "Be sure to check the website "+ToCountry_data.url+" for latest info";
-  info.innerHTML = "Just fly from "+FromCountry+" to "+ToCountry+" just don't forget to "+CountryConnection;
+  info.innerHTML = "Just fly from " + FromCountry + " to " + ToCountry + " just don't forget to " + CountryConnection;
 }
 //////////////////////////////////////////////////////////////////////
