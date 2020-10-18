@@ -6,6 +6,7 @@
     <title>Document</title>
     <link href="css/style.css" rel="stylesheet">
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="json/countries.js"></script>
 </head>
 <body>
     <header>
@@ -16,94 +17,35 @@
             <a href="pages/contact.html">Contact</a>
             <a href="pages/FAQ.html">FAQ</a>
             <a href="pages/Map.html">Map</a>
-            
-    
         </div>
     </header>
     <div class="background-image" >
         <form class="section" method="GET" id="id_form" onsubmit="return submitFunction()">
 
             <!-- FROM BUTTON -->
-
             <div class="dropdown"> 
                 <input type="text" placeholder="From" list="FromButton" id="id_button_From" name="FromName">
             
-                <datalist id="FromButton">
-                    <!-- <option>Berlin</option>
-                    <option>Stockholm</option>
-                    <option>Portugal</option>
-                    <option>Merlin</option>
-                    <option>Gandalf</option> -->
-                </datalist>
+                <datalist id="FromButton"></datalist>
             </div>
-            
-            <!-- <div class="dropdown">
-                <button onclick="showFrom()"  class="dropbtn">From</button>
-                <div id="id_From" class="dropdown-content">
-                    <a href="#Berlin">Berlin</a>
-                    <a href="#Stockholm">Stockholm</a>
-                    <a href="#Portugal">Portugal</a>
-                </div>
-            </div> -->
-
-            <!-- <form autocomplete="off" action="/action_page.php">
-                <div class="autocomplete" style="width:300px;">
-                  <input id="myInput" type="text" name="myCountry" placeholder="Country">
-                </div>
-                <input type="submit">
-              </form> -->
-
-
             <!-- FROM BUTTON END -->
 
-            <!-- TO BUTTON -->   
-
-            <!-- <div class="dropdown">
-                <button onclick="showTo()"  class="dropbtn">To</button>
-                <div id="id_To" class="dropdown-content">
-                    <a href="#Berlin">Berlin</a>
-                    <a href="#Stockholm">Stockholm</a>
-                    <a href="#Portugal">Portugal</a>
-                </div>
-            </div> -->
-
-
-            <!-- <form autocomplete="off" action="/action_page.php">
-                <div class="autocomplete" style="width:300px;">
-                  <input id="myInput" type="text" name="myCountry" placeholder="Country">
-                </div>
-                <input type="submit">
-              </form> -->
-            
-              <div class="dropdown"> 
+            <!-- TO BUTTON -->
+            <div class="dropdown"> 
                 <input type="text" placeholder="To" list="ToButton" id="id_button_To" name="ToName">
 
-                    <datalist id="ToButton">
-                        <!-- <option>Berlin</option>
-                        <option>Stockholm</option>
-                        <option>Portugal</option>
-                        <option>Merlin</option>
-                        <option>Gandalf</option> -->
-                    </datalist>
-                </div>
-
-
+                <datalist id="ToButton"></datalist>
+            </div>
               <!-- TO BUTTON END -->
 
               <!-- SEARCH BUTTON -->
             <div>
-                <button class="dropbtn">
-                    Search
-                </button>
+                <button class="dropbtn">Search</button>
             </div>
              <!-- SEARCH BUTTON END-->
         </form>
     </div>
 
     <footer>footer</footer>
-
-
-    
-    
 </body>
 </html>
