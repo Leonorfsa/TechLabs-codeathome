@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Caveat');
 
+
+
 body{
 	padding: 0;
 	margin: 0;
 	background:#f4f4f4;
+	font-family: "Montserrat";
 }
-html,h1,h2,h3,h4,h5,h6,a{
+html,h1,h2,h3,h4,h5,h6,a,p{
 	font-family: "Montserrat";
 }
 .navbar{
@@ -16,6 +19,11 @@ html,h1,h2,h3,h4,h5,h6,a{
 .navbar-brand{
 	font-family: "Caveat";
 	font-size: 40px;
+}
+
+.navbar-brand:hover {
+	text-shadow: 2px 2px #70a18b;
+	color: #f4f4f4;
 }
 
 .nav-item{
@@ -32,7 +40,6 @@ html,h1,h2,h3,h4,h5,h6,a{
 .nav-link:hover{
 	background: #f4f4f4;
 	color: #84B59F;
-
 }
 .navbar-collapse{
  justify-content: flex-end;
@@ -41,96 +48,135 @@ html,h1,h2,h3,h4,h5,h6,a{
   background:#fff !important;
 }
 
-/*header style*/
-.header{
-	position: relative;
-	background-image: url('../images/travel.jpg');
+/* General Button Design*/
+.button {
+	background-color: #84B59F;
+	border: none;
+	color: #f4f4f4;
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 20px;
+  }
 
+.button:hover {
+	background-color:  #f4f4f4;
+	color: #84B59F ;
+	box-shadow: 5px 7px rgb(136, 136, 136, 0.3);
+}
+
+
+/*header style*/
+
+.header{
+	background-image: linear-gradient(to bottom, rgba(244, 244, 244, 0.0), rgba(244, 244, 244, 1)),
+	url('../images/travel.jpg');
 	background-size: cover;
-	background-position: center;
+	background-position: top;
+	font-family: "Montserrat";
 }
-.overlay{
+
+.introduction {
 	position: absolute;
-	min-height: 100%;
-	min-width: 100%;
-	left: 0;
-	top: 0;
-	background: rgba(244, 244, 244, 0.50);
+    top: 20%;
+    margin: auto;
+	padding: 0.66em;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: "Montserrat";
+	color: #46745f;
+	background-color: rgb(244, 244, 244, 0.8);
 }
+
 .description{
     position: absolute;
     top: 30%;
     margin: auto;
-    padding: 2em;
-
-}
-.description h1{
-	color:#84B59F ;
-}
-
-.description p{
-	color:#666;
-	font-size: 20px;
-	width: 50%;
-	line-height: 1.5;
-}
-.description button{
-	border:1px  solid #84B59F;
-	background:#84B59F;
-	color:#fff;
-}
-.map{
-	margin: 4em 0;
-	padding: 1em;
-	position: relative;
-}
-.map h1{
-	color:#84B59F;
-	margin: 2em;
-}
-.map img{
-	height: 100%;
-    width: 100%;
-    border-radius: 50%
-}
-.map span{
-	display: block;
-	color: #888;
-	position: absolute;
-	left: 115px;
-}
-.map .desc{
 	padding: 2em;
-	border-left:4px solid #10828C;
+	font-family: "Montserrat";
 }
-.map .desc h3{
-	color: #10828C;
+
+.description-2{
+    position: absolute;
+	top: 30%;
+	left: 35%;
+    margin: auto;
+	padding: 2em;
+	font-family: "Montserrat";
 }
-.map .desc p{
-	line-height:2;
-	color:#888;
+
+#search-button {
+	position: absolute;
+	top: 34%;
+	left: 60%;
+    margin: auto;
+	padding: 1em;
 }
+
+
+
+/* Dropdown */
+:root {
+	--radius: 6px;
+	--baseBg: #f4f4f4;
+	--accentFg: #84B59F;
+	--accentBg: rgb(255, 255, 255);
+  }
+
+select {
+	font: 400 18px/1.3 Monserrat;
+	-webkit-appearance: none;
+	appearance: none;
+	color: var(--baseFg);
+	border: 10px solid var(--baseFg);
+	line-height: 1.1;
+	outline: 0;
+	padding: 0.65em 2.5em 0.55em 0.75em;
+	border-radius: var(--radius);
+	background-color: var(--baseBg);
+	background-image: linear-gradient(var(--baseFg), var(--baseFg)),    /* uses layered rotated background layers to «cut out» a dropdown arrow*/
+		linear-gradient(-135deg, transparent 45%, var(--accentFg) 45%),
+		linear-gradient(-225deg, transparent 45%, var(--accentFg) 45%),
+		linear-gradient(var(--accentFg) 48%, var(--accentBg) 48%);
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+	background-size: 1px 100%, 20px 22px, 20px 22px, 20px 100%;
+	background-position: right 20px center, right bottom, right bottom, right bottom;  
+	outline: 5px solid rgba(244, 244, 244, 0.5); 
+  }
+  
+select:hover {
+	background-image: linear-gradient(var(--accentFg), var(--accentFg)),
+	  linear-gradient(-135deg, transparent 45%, var(--accentFg) 45%),
+	  linear-gradient(-225deg, transparent 45%, var(--accentFg) 45%),
+	  linear-gradient(var(--accentFg) 48%, var(--accentBg) 48%);
+  }
+
+select:active {
+	background-image: linear-gradient(var(--accentFg), var(--accentFg)),
+		linear-gradient(-135deg, transparent 45%, var(--accentFg) 45%),
+		linear-gradient(-225deg, transparent 45%, var(--accentFg) 45%),
+		linear-gradient(var(--accentFg) 48%, var(--accentBg) 48%);
+	color: var(--accentBg);
+	border-color: var(--accentFg);
+	background-color: var(--accentFg);
+  }
+
+/* Dropdown Results */
+
+
 
 
 /*FAQ*/
-.FAQ{
-	margin: 4em 0;
-    position: relative;	
-}
-.FAQ h1{
-	color:#84B59F;
-	margin: 2em;	
-}
-.FAQ img{
-	 height: 15rem;
-	 width: 100%;
-	 margin: 1em;
-}
-
 
 .contact-form{
-	margin: 6em 0;
+	margin: 8em 0;
 	position: relative;		
+	height: max-content;
 }
 
 .contact-form h1{
