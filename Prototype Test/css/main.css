@@ -12,41 +12,49 @@ body{
 html,h1,h2,h3,h4,h5,h6,a,p{
 	font-family: "Montserrat";
 }
-.navbar{
-	background:#84B59F;
-}
 
-.navbar-brand{
-	font-family: "Caveat";
-	font-size: 40px;
-}
+/* Navbar Nastya*/
 
-.navbar-brand:hover {
-	text-shadow: 2px 2px #70a18b;
-	color: #f4f4f4;
-}
+.topnav {
+	overflow: hidden;
+	background-color: #84B59F;  
+	padding: 0px;
+  }
+  
+.navigation-b {
+	float: right;
+	color: #F0EEE5;
+	text-align: center;
+	padding: 20px 16px;
+	text-decoration: none;
+	font-size: 25px;
+  }
 
-.nav-item{
-	font-size: 20px;
-}
-
-.nav-link , .navbar-brand{
-	color: #f4f4f4;
-	cursor: pointer;
-}
-.nav-link{
-	margin-right: 1em !important;
-}
-.nav-link:hover{
+.navigation-b:hover {
 	background: #f4f4f4;
 	color: #84B59F;
-}
-.navbar-collapse{
- justify-content: flex-end;
-}
-.navbar-toggler{
-  background:#fff !important;
-}
+  }
+
+  
+.topnav-right {
+	float: right;
+  }
+  
+#logo {
+	float: left;
+	font-size: 45px;
+	color: #F0EEE5;
+	margin-left: 1%;
+	margin-bottom: 0px;
+	margin-top: 5px;
+	font-family: 'Caveat';
+	text-decoration: none;
+  }
+
+#logo:hover {
+	text-shadow: 2px 2px #70a18b;
+	color: #f4f4f4;
+  }
 
 /* General Button Design*/
 .button {
@@ -224,3 +232,12 @@ tr:hover {
 	color: #888;
 	font-size: 16px;
 }
+
+
+/* Footer */
+
+.footer {
+	background-color: #807A7A;
+	text-align: center;
+	padding: 0px;
+  }
