@@ -164,6 +164,7 @@ select:hover {
 	  linear-gradient(-135deg, transparent 45%, var(--accentFg) 45%),
 	  linear-gradient(-225deg, transparent 45%, var(--accentFg) 45%),
 	  linear-gradient(var(--accentFg) 48%, var(--accentBg) 48%);
+	cursor: pointer;
   }
 
 select:active {
