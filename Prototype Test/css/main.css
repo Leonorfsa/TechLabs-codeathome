@@ -146,7 +146,8 @@ select {
 	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 	background-size: 1px 100%, 20px 22px, 20px 22px, 20px 100%;
 	background-position: right 20px center, right bottom, right bottom, right bottom;  
-	outline: 5px solid rgba(244, 244, 244, 0.5); 
+	/*outline: 5px solid rgba(244, 244, 244, 0.5); */
+	box-shadow: 5px 7px rgb(136, 136, 136, 0.3);
   }
   
 select:hover {
@@ -166,7 +167,24 @@ select:active {
 	background-color: var(--accentFg);
   }
 
-/* Dropdown Results */
+/* Table Dropdown Results */
+#items_table {
+	table-layout: auto;
+	width: 100%; 
+	background-color: rgba(244, 244, 244, 0.8);
+}
+
+th {
+	padding: 10px;
+	text-align: left;
+	border-bottom: 1mm solid  rgb(132, 181, 159, 0.8);
+}
+
+td {
+	padding: 10px;
+	text-align: left;
+	border-bottom: 1px solid  rgb(132, 181, 159, 0.8);
+}
 
 
 
