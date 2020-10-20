@@ -83,14 +83,15 @@ html,h1,h2,h3,h4,h5,h6,a,p{
 
 .introduction {
 	position: absolute;
-    top: 20%;
-    margin: auto;
+	top: 20%;
+	left: 0%;
 	padding: 0.66em;
+	width: 100%;
 	font-size: 20px;
 	font-weight: bold;
 	font-family: "Montserrat";
 	color: #46745f;
-	background-color: rgb(244, 244, 244, 0.8);
+	background-color: rgb(244, 244, 244, 0.9);
 }
 
 .description{
