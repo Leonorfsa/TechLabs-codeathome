@@ -2,25 +2,44 @@ var countries_data = {
     "Belgium" : {
         "url" : "www.google.com",
         "case_number" : "20",
-        "comments" : "wear masks"
+        "comments" : "wear masks",
+        "Entry": "None",
+        "Hygiene": "None",
+        "Activity": "None",
+        "Links": "None",
+        "Dates": "None"
     },
     "Germany Berlin" : {
         "url" : "www.google.com",
         "case_number" : "10",
-        "comments" : "wear masks"
+        "comments" : "wear masks",
+        "Entry": "Yes",
+        "Hygiene": "Masks are necessary during shopping and travelling per public transports.",
+        "Activity": "Many activities are allowed with sometimes limited access.",
+        "Links": "Yes",
+        "Dates": "Yes"
     },
     "Portugal" : {
         "url" : "www.google.com",
         "case_number" : "20",
-        "comments" : "wear masks"
+        "comments" : "wear masks",
+        "Entry": "None",
+        "Hygiene": "None",
+        "Activity": "None",
+        "Links": "None",
+        "Dates": "None"
     },
     "Sweden" : {
         "url" : "ww.fitta.se",
         "case_number" : "20",
-        "comments" : "don't wear masks"
+        "comments" : "don't wear masks",
+        "Entry": "None",
+        "Hygiene": "None",
+        "Activity": "None",
+        "Links": "None",
+        "Dates": "None"
     }    
 };
-
 
 var country_connections = {
     "Belgium - Germany Berlin"  : "wash your hands and wear mask",
