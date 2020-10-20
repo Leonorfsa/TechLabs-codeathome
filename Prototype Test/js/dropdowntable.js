@@ -25,6 +25,11 @@ function myFunction() {
     var col2 = mydata.filter(function(obj, index){
         return obj.town===to;
     })
+    
+    /* alarm when from or to is missing*/
+    if (from == "Choose starting point" || to == "Choose your destination") {
+        alert("You must choose a starting point and your destination.");
+    }
 
     items_table.innerHTML = null;
     items_table = document.getElementById('items_table');
