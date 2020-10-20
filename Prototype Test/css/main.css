@@ -122,8 +122,8 @@ html,h1,h2,h3,h4,h5,h6,a,p{
 #search-button {
 	position: absolute;
 	top: 34%;
-	left: 60%;
-    margin: auto;
+	left: 70%;
+   	margin: auto;
 	padding: 1em;
 }
 
