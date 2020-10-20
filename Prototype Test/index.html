@@ -10,7 +10,8 @@
 	  <script scr="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript">
 	  </script>
-	  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	  <script src="jquery-csv.js"></script>
+	  <script type="text/javascript" src="locations.json"> </script>
 </head>
 <body>
   <!-- navbar -->
@@ -56,24 +57,12 @@
 		</select>
 		<br> <br>
 		<!-- result area -->
-		<p class="category" id="res">  
-			<div id="wrap">
-			</div>
-			<!-- end wrap -->
-			<script type="text/javascript">
-			 $.get('data.csv', function(data) {
-				var build = '<table border="1" cellpadding="2" cellspacing="0" style="border-collapse: collapse" width="100%">\n';
-				var rows = data.split("\n");
-				rows.forEach( function getvalues(thisRow) {
-				build += "<tr>\n";
-				var columns = thisRow.split(",");
-				for(var i=0;i<columns.length;i++){ build += "<td>" + columns[i] + "</td>\n"; }   			
-				build += "</tr>\n";
-				})
-				build += "</table>";
-				$('#wrap').append(build);	
-			 });</script>
-		</p>
+		<form class="category" id="res" id="countrytable">
+				<!-- SHOPPING TABLE -->
+				<table id='items_table'>
+				  
+				</table>
+		</form>
 	  </div>
 
 	  <!-- Dropdown "To" -->
@@ -93,7 +82,10 @@
 </header>
 
 
-<!-- add Javasscript file from js file -->
+<!-- add Javasscript file from js file 
+https://gist.github.com/laurenancona/bd560948d71054e3d1477e43c4d48cb6#file-main-js-L7
+alert(mydata[0].Entry);
+-->
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src='js/main.js'></script>
@@ -105,22 +97,39 @@ const myText = document.getElementById('res');
 function myFunction() {
 	const from = document.getElementById("select-wrapper").value;
 	const to = document.getElementById("select-wrapper-2").value;
-	if (from == "Berlin" & to == "Portugal"){
-			myText.innerHTML = from ;
-		} else {
-			myText.innerHTML = "no"; 
-		}
-		myText.style.backgroundColor = ' #fff';
-		myText.style.opacity = '0.8';
-		myText.style.padding = '15px';
-		myText.style.height = '500px';
-		myText.style.width = '700px';
-		myText.style.outline = '5px solid rgba(244, 244, 244, 0.5)';
+	var mydata = JSON.parse(loca);
+	var col1, col2 = null;
+
+	/* Filter for json-object from */
+	var col1 = mydata.filter(function(obj, index){
+		return obj.town===from;
+	})
+	/*myText.innerHTML = col1[0].town;*/
+
+	/* Filter for json-object to */
+	var col2 = mydata.filter(function(obj, index){
+		return obj.town===to;
+	})
+
+	items_table.innerHTML = null;
+	items_table = document.getElementById('items_table');
+	for(var ctr = 0; ctr < 7; ctr++)
+	{
+		items_table.innerHTML+= '<tr><th>' + "Categories" + '</th><th>' + "From:" + 
+			'</th><th>' +"To:"+'</th></tr>'+
+			'<tr><td>' + "Entry Regulations" + '</td><td>' 
+			+ col1[ctr].Entry + '</td><td>' + col2[ctr].Entry + '</td></tr>' +
+			'<tr><td>' + "Hygiene Regulations" + '</td><td>' 
+			+ col1[ctr].Hygiene + '</td><td>' + col2[ctr].Hygiene + '</td></tr>' +
+			'<tr><td>' + "Activity Regulations" + '</td><td>' 
+			+ col1[ctr].Activity + '</td><td>' + col2[ctr].Activity + '</td></tr>' +
+			'<tr><td>' + "Further Links" + '</td><td>' 
+			+ col1[ctr].Links + '</td><td>' + col2[ctr].Links + '</td></tr>' +
+			'<tr><td>' + "Last Updates:" + '</td><td>' 
+			+ col1[ctr].Dates + '</td><td>' + col2[ctr].Dates + '</td></tr>';
+	}
+
 }
-
-
-
-
 </script>
 
 
