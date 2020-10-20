@@ -44,16 +44,13 @@
 
 	   <!-- Explanation -->
 	  <div class="introduction">
-		Choose your starting point and destination:
+		Choose your starting point and destination
 	  </div>
 
 	  <!-- Dropdown "From" -->
    	  <div class="description" id=first>
-		<select id="select-wrapper">
-			<option value="From">From :</option>
-			<option value="Berlin">Germany - Berlin</option>
-			<option value="Stockholm">Sweden - Stockholm</option>
-			<option value="Portugal">Portugal</option>
+		<select id="select-wrapper"  class="country-dropdown">
+			<option>Choose starting point</option>
 		</select>
 		<br> <br> <br>
 		<!-- result area -->
@@ -68,11 +65,8 @@
 
 	  <!-- Dropdown "To" -->
 	  <div class="description-2" id=second>
-		<select id="select-wrapper-2">
-			<option value="From">To :</option>
-			<option value="Berlin">Germany - Berlin</option>
-			<option value="Stockholm">Sweden - Stockholm</option>
-			<option value="Portugal">Portugal</option>
+		<select id="select-wrapper-2" class="country-dropdown">
+			<option>Choose your destination</option>
 		</select>
 	  </div>
 
@@ -91,7 +85,16 @@ alert(mydata[0].Entry);
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src='js/main.js'></script>
 
-<script>  
+<script> 
+
+/* Dynamically pull dropdown options from Jason*/
+var mydata = JSON.parse(loca);
+
+$.each(mydata, function (i, p) {
+  $('.country-dropdown').append($('<option></option>').val(p.town).html(p.town));
+});
+
+/* Dynamically pull table based on the current dropdown values*/
 const btn = document.getElementById('search-button');
 const myText = document.getElementById('res');
 
@@ -125,7 +128,8 @@ function myFunction() {
 			'<tr><td>' + "Activity Regulations" + '</td><td>' 
 			+ col1[ctr].Activity + '</td><td>' + col2[ctr].Activity + '</td></tr>' +
 			'<tr><td>' + "Further Links" + '</td><td>' 
-			+ col1[ctr].Links + '</td><td>' + col2[ctr].Links + '</td></tr>' +
+			+ '<a href=https://' + col1[ctr].Links + ' target="_blank">More Information</a> ' + '</td><td>' + '<a href=https://' +
+				 col2[ctr].Links + ' target="_blank">More Information</a> ' + '</td></tr>' +
 			'<tr><td>' + "Last Updates:" + '</td><td>' 
 			+ col1[ctr].Dates + '</td><td>' + col2[ctr].Dates + '</td></tr>';
 	}
