@@ -19,16 +19,17 @@ html,h1,h2,h3,h4,h5,h6,a{
 .topnav {
   overflow: hidden;
   background-color: #84B59F;  
-  padding: 0,5%;
+  padding: 12px;
+    
 }
 
-.topnav a {
+.navigation-b {
   float: right;
   color: #F0EEE5;
   text-align: center;
-  padding: 30px 16px;
+  padding: 20px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
   
 
 }
@@ -39,7 +40,6 @@ html,h1,h2,h3,h4,h5,h6,a{
 }
 
 .topnav a.active {
-  background-color: #4CAF50;
   color: white;
 }
 
@@ -47,11 +47,15 @@ html,h1,h2,h3,h4,h5,h6,a{
   float: right;
 }
 
-.logo {
+#logo {
   float: left;
-  font-size: 30px;
+  font-size: 54px;
   color: #F0EEE5;
   margin-left: 1%;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-family: 'Caveat';
+  text-decoration: none;
 }
 
 .section{
@@ -66,22 +70,6 @@ html,h1,h2,h3,h4,h5,h6,a{
 align-self: center;
 
 }
-
-/* 
-.button {
-  background-color: #F4F4F4; 
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  position: relative;
-  display: inline-block;
-  border-radius: 20px;
-  border: 2px solid #C4C4C4;
-} */
 
 footer {
   background-color: #807A7A;
@@ -136,7 +124,7 @@ footer {
 }
 
 .dropdown-content a {
-  color: black;
+  color:  #84B59F;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
