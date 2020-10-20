@@ -55,7 +55,7 @@
 			<option value="Stockholm">Sweden - Stockholm</option>
 			<option value="Portugal">Portugal</option>
 		</select>
-		<br> <br>
+		<br> <br> <br>
 		<!-- result area -->
 		<form class="category" id="res" id="countrytable">
 				<!-- SHOPPING TABLE -->
@@ -63,6 +63,7 @@
 				  
 				</table>
 		</form>
+		<br>
 	  </div>
 
 	  <!-- Dropdown "To" -->
@@ -115,8 +116,8 @@ function myFunction() {
 	items_table = document.getElementById('items_table');
 	for(var ctr = 0; ctr < 7; ctr++)
 	{
-		items_table.innerHTML+= '<tr><th>' + "Categories" + '</th><th>' + "From:" + 
-			'</th><th>' +"To:"+'</th></tr>'+
+		items_table.innerHTML+= '<tr><th>' + " Categories" + '</th><th>' + "From: " +col1[ctr].town  + 
+			'</th><th>' +"To: "+ col2[ctr].town +'</th></tr>'+
 			'<tr><td>' + "Entry Regulations" + '</td><td>' 
 			+ col1[ctr].Entry + '</td><td>' + col2[ctr].Entry + '</td></tr>' +
 			'<tr><td>' + "Hygiene Regulations" + '</td><td>' 
