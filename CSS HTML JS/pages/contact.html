@@ -7,7 +7,7 @@
     <link href="../css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="background-image">
     <header>
         <div class="topnav">
             <a id="logo" href="../index.html"> Pandemic Nomad </a>
@@ -17,13 +17,31 @@
             <a class="navigation-b" href="Map.html">Map</a>
         </div>
     </header>
-    <div class="background-image">
+
+    
         <section>
-            <div>a</div>
-            <div>b</div>
-            <div>c</div>
-        </section>
-    </div>
+            <!-- Contact form -->
+            <div class="container">
+                <form action="/action_page.php">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
     <footer>footer</footer>
     
 </body>
