@@ -25,25 +25,40 @@ function myFunction() {
     var col2 = mydata.filter(function(obj, index){
         return obj.town===to;
     })
-    
+
     /* alarm when from or to is missing*/
     if (from == "Choose starting point" || to == "Choose your destination") {
         alert("You must choose a starting point and your destination.");
     }
+
+    var inlink1 = null
+    var inlink2 = null
+    if (col1[0].https) {
+        inlink1 = '<a href=https://' + col1[0].Links + ' target="_blank">More Information</a> ' 
+                + '</td><td>' 
+    } else {
+        inlink1 = '<a href=http://' + col1[0].Links + ' target="_blank">More Information</a> ' 
+                + '</td><td>' 
+                }
+
+    if (col2[0].https) {
+        inlink2 = '<a href=https://' + col2[0].Links + ' target="_blank">More Information</a> ' 
+    } else {
+        inlink2 = '<a href=http://' + col2[0].Links + ' target="_blank">More Information</a> ' 
+        }
 
     items_table.innerHTML = null;
     items_table = document.getElementById('items_table');
     items_table.innerHTML+= '<tr><th>' + " Categories" + '</th><th>' + "From: " +col1[0].town  + 
         '</th><th>' +"To: "+ col2[0].town +'</th></tr>'+
         '<tr><td>' + "Entry Regulations" + '</td><td>' 
-        + col1[0].Entry + '</td><td>' + col2[0].Entry + '</td></tr>' +
+            + col1[0].Entry + '</td><td>' + col2[0].Entry + '</td></tr>' +
         '<tr><td>' + "Hygiene Regulations" + '</td><td>' 
-        + col1[0].Hygiene + '</td><td>' + col2[0].Hygiene + '</td></tr>' +
+            + col1[0].Hygiene + '</td><td>' + col2[0].Hygiene + '</td></tr>' +
         '<tr><td>' + "Activity Regulations" + '</td><td>' 
-        + col1[0].Activity + '</td><td>' + col2[0].Activity + '</td></tr>' +
+            + col1[0].Activity + '</td><td>' + col2[0].Activity + '</td></tr>' +
         '<tr><td>' + "Further Links" + '</td><td>' 
-        + '<a href=https://' + col1[0].Links + ' target="_blank">More Information</a> ' + '</td><td>' + '<a href=https://' +
-            col2[0].Links + ' target="_blank">More Information</a> ' + '</td></tr>' +
-        '<tr><td>' + "Last Updated:" + '</td><td>' 
-        + col1[0].Dates + '</td><td>' + col2[0].Dates + '</td></tr>';
+        + inlink1 + inlink2 
+        + '</td></tr>' + '<tr><td>' + "Last Updated:" + '</td><td>' 
+            + col1[0].Dates + '</td><td>' + col2[0].Dates + '</td></tr>';
 }
