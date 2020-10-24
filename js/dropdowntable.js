@@ -33,7 +33,7 @@ function myFunction() {
 
     var inlink1 = null
     var inlink2 = null
-    if (col1[0].https) {
+    if (col1[0].https == "y") {
         inlink1 = '<a href=https://' + col1[0].Links + ' target="_blank">More Information</a> ' 
                 + '</td><td>' 
     } else {
@@ -41,7 +41,7 @@ function myFunction() {
                 + '</td><td>' 
                 }
 
-    if (col2[0].https) {
+    if (col2[0].https == "y") {
         inlink2 = '<a href=https://' + col2[0].Links + ' target="_blank">More Information</a> ' 
     } else {
         inlink2 = '<a href=http://' + col2[0].Links + ' target="_blank">More Information</a> ' 
