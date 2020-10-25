@@ -21,7 +21,7 @@ loca = [
     },
     {
         "name" : "Portugal",
-        "town" : "Portugal - Acore Island", 
+        "town" : "Portugal - A\xE7ore Island", 
         "Entry": "You must present, at the time of arrival, a proof of laboratory test for screening for infection by SARS-CoV-2 with a negative result.", 
         "Hygiene": "Masks are necessary in closed public spaces and travelling per public transports. Required 2 meters distancing at all times. The Clean&Safe seal allows the identification of establishments and services that have implemented reinforced hygiene and safety measures.",
         "Activity": "Many activities are allowed with sometimes limited access.", 
