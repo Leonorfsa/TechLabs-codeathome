@@ -1,5 +1,5 @@
 /* Dynamically pull dropdown options from Jason*/
-var mydata = JSON.parse(loca);
+var mydata = loca;
 
 $.each(mydata, function (i, p) {
 $('.country-dropdown').append($('<option></option>').val(p.town).html(p.town));
@@ -12,7 +12,7 @@ const myText = document.getElementById('res');
 function myFunction() {
     const from = document.getElementById("select-wrapper").value;
     const to = document.getElementById("select-wrapper-2").value;
-    var mydata = JSON.parse(loca);
+    var mydata = loca;
     var col1, col2 = null;
 
     /* Filter for json-object from */
