@@ -1,4 +1,4 @@
-loca = [
+mydata = [
     {
         "name" : "Germany",
         "town" : "Germany - Berlin",
