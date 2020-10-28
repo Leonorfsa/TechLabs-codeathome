@@ -46,17 +46,22 @@ function myFunction() {
 
         items_table.innerHTML = null;
         items_table = document.getElementById('items_table');
-        items_table.innerHTML+= '<tr><th>' + " Categories" + '</th><th>' + "From: " +col1[0].town  + 
-            '</th><th>' +"To: "+ col2[0].town +'</th></tr>'+
-            '<tr><td>' + "Entry Regulations" + '</td><td>' 
-                + col1[0].Entry + '</td><td>' + col2[0].Entry + '</td></tr>' +
+        items_table.innerHTML+= '<tr><th>' + " Departure:" + '</th><th>' + "From: " +col1[0].town  + 
+            '</th><th>'+ "Arrival:" +'</th><th>' +"To: "+ col2[0].town +'</th></tr>'+
+
+            '<tr><td>' + "Departure Regulations" + '</td><td>' 
+                + col1[0].Departure + '</td><td>' + "Entry Regulations" +'</td><td>'+ col2[0].Entry + '</td></tr>' +
+
             '<tr><td>' + "Hygiene Regulations" + '</td><td>' 
-                + col1[0].Hygiene + '</td><td>' + col2[0].Hygiene + '</td></tr>' +
-            '<tr><td>' + "Activity Regulations" + '</td><td>' 
-                + col1[0].Activity + '</td><td>' + col2[0].Activity + '</td></tr>' +
-            '<tr><td>' + "Further Links" + '</td><td>' 
-            + inlink1 + inlink2 
-            + '</td></tr>' + '<tr><td>' + "Last Updated:" + '</td><td>' 
-                + col1[0].Dates + '</td><td>' + col2[0].Dates + '</td></tr>';
-    }
+                + col1[0].HygieneDep + '</td><td>'+ "Hygiene Regulations" +'</td><td>'+ col2[0].Hygiene + '</td></tr>' +
+
+            '<tr><td>' + "Other" + '</td><td>' 
+                + col1[0].Other + '</td><td>'+ "Activity Regulations" +'</td><td>'+ col2[0].Activity + '</td></tr>' +
+
+            '<tr><td>'+ "Further Links" + '</td><td>'
+                + inlink1 + "Further Links" +'</td><td>'+ inlink2 + '</td></tr>' +
+
+            '<tr><td>' + "Last Updated:" + '</td><td>' 
+                + col1[0].Dates + '</td><td>' + "Last Updated:"+'</td><td>' + col2[0].Dates + '</td></tr>';
+        }
 }
