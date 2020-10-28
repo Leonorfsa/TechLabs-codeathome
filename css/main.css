@@ -206,7 +206,12 @@ th {
 }
 
 th:nth-child(1){
-	width:200px;
+	width:150px;
+}
+
+
+th:nth-child(3){
+	width:150px;
 }
 
 
