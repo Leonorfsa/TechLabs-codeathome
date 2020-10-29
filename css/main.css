@@ -338,6 +338,8 @@ tr:hover {
 
 
 /* FAQ by Nastia and updated from Ulrike  */
+
+
 dl{
 	display: flex;
 	/* flex-wrap: wrap; */
@@ -362,7 +364,8 @@ dl{
 
 dl.faq button {
 	margin: 0;
-	padding-bottom: 0.4em;
+	padding-bottom: 0.2em;
+	padding-top: 0.2em;
 	margin-top: 1em;
 	font-weight: bold;
 	font-size: 110%;
