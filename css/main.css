@@ -23,7 +23,7 @@ html,h1,h2,h3,h4,h5,h6,a,p{
 	font-family: "Montserrat";
 }
 
-/* Navbar Nastya*/
+/* Navbar by Nastya and updated by Ulrike*/
 
 .topnav {
 	overflow: hidden;
@@ -89,7 +89,7 @@ html,h1,h2,h3,h4,h5,h6,a,p{
 }
 
 
-/*header style*/
+/*header style: by all*/
 
 .header{
 	background-image: linear-gradient(to bottom, rgba(244, 244, 244, 0.0), rgba(244, 244, 244, 1)),
@@ -142,7 +142,7 @@ html,h1,h2,h3,h4,h5,h6,a,p{
 
 
 
-/* Dropdown */
+/* Dropdown by Ulrike */
 :root {
 	--radius: 6px;
 	--baseBg: #f4f4f4;
@@ -190,7 +190,7 @@ select:active {
 	background-color: var(--accentFg);
   }
 
-/* Table Dropdown Results */
+/* Table Dropdown Results: By Ulrike & updated by Nastia in the javascript */
 #items_table {
 	table-layout: fixed;
 	width: 1050px;
@@ -227,7 +227,7 @@ tr:hover {
 }
 
 
-/*FAQ*/
+/* Contact form: By Ulrike (layout), functionality by all*/
 
 .contact-form{
 	margin: 8em 0;
@@ -253,7 +253,7 @@ tr:hover {
 }
 
 
-/*About*/
+/*About: base from Ulrike & updated by Nastia and Leonor*/
 .about {
 	position: absolute;
 	top: 30%;
@@ -290,7 +290,7 @@ tr:hover {
   }
 
 
-/* MAP */
+/* MAP by Leonor including used javascript */
 
 .mapdiv{
 	width: 100%;
@@ -336,14 +336,20 @@ tr:hover {
 }
 
 
-/* ///////////FAQ FROM NASTIA/////////////////////// */
+
+/* FAQ by Nastia and updated from Ulrike  */
 
 dl{
 	display: flex;
 	/* flex-wrap: wrap; */
 	flex-direction: column;
-	
-
+	position: absolute;
+	top: 15%;
+	left: 0%;
+	padding: 0.66em;
+	padding-left: 15%;
+	padding-right: 15%;
+	width: 100%;
 	
 }
 
@@ -353,48 +359,47 @@ dl.faq button {
 	margin-top: 1em;
 	font-weight: bold;
 	font-size: 110%;
-	border: thin solid transparent;
 	background-color: transparent;
 	padding-left: 0.125em;
+	border: thin solid transparent;
+	width:100%;
+	text-align: left;
   }
   
   dl dd {
 	margin: 0;
-	padding: 0;
+	padding: 5px;
 	margin-left: 1.5em;
   }
   
   dl.faq .desc {
 	margin: 0;
-	padding: 0.5em;
+	padding: 0.8em;
 	font-size: 110%;
 	display: none;
 	background-color: #f4f4f4;
   }
   
-  dl.faq button:hover,
   dl.faq button:focus {
-	background-color: #eee;
-  }
-  
-  dl.faq button:focus {
-	border-color: #630;
+	background-color: rgb(132, 181, 159,0.2);
   }
   
   dl.faq button:hover {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
+	background-color:rgb(132, 181, 159,0.3);
   }
   
   dl.faq button:active {
-	background-color: #bbb;
+	background-color:rgb(132, 181, 159,0.2);
   }
   
   dl.faq button[aria-expanded="false"]::before {
 	content: url('../images/control_bottom_right.png');
-	padding-right: 0.35em;
+	padding-right: 0.25em;
   }
   
   dl.faq button[aria-expanded="true"]::before {
 	content: url('../images/down-arrow-brown.png');
-	padding-right: 0.35em;
+	padding-right: 0.25em;
+	background-color: rgb(132, 181, 159,1);
   }
