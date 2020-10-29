@@ -18,9 +18,9 @@ mydata = [
         "Entry": "Restricted Entry if you are visiting from a high risk area see link below from the RKI or if you are coming from outside of europe. High risks areas are updated each day depending on current case numbers. If you are coming from such an area you have to quarantine and follow the reporting requirements. All people coming from such an area  must present themselves for a SARS-CoV-2 coronavirus test within ten days. If you are coming from a non-risk-area such measures are not required.",
         "Hygiene": "The minimum social distance is 1.5 metres to people from other households. Mouth-and-nose coverings in enclosed spaces are necessary, example are: doctors offices, buildings with public access like shopping centers, schools, churches, public transport, shops and buisnesses. Outdoors mouth-and-nose coverings are required at local public transport stops, in railway stations and in highly frequented city centre area.  ",
         "Activity": "Many activities are allowed with limited access or additional regulations. Sport centers, swimming  From the start of november many places like hotels will be closed for respectively some weeks.",
-        "Departure": "For your departure the hygiene regulations for public transports have to be followed. The 7-day-inzidenz of Dresden si currently 63,2 per 100.000 residents (29.Oct, 2020).",
+        "Departure": "For your departure the hygiene regulations for public transports have to be followed. The 7-day-inzidenz of Dresden si currently 63,2 per 100.000 residents (28.Oct, 2020).",
         "HygieneDep": "The minimum social distance is 1.5 metres to people from other households. Mouth-and-nose coverings in enclosed spaces are necessary, example are: buildings with public access like shopping centers, public transport, shops and buisnesses. Outdoors mouth-and-nose coverings are required at local public transport stops, in railway stations and in highly frequented city centre area. ",
-        "Other": "",
+        "Other": "As the current 7-days-inzidenz is over 50 per 100.000 residents the regulations have to be tightened (28.Oct, 2020).",
         "Links": "dresden.de/en/city/corona_en.php",
         "Dates": "29.Oct, 2020",
         "https":"y"
