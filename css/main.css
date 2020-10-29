@@ -338,7 +338,6 @@ tr:hover {
 
 
 /* FAQ by Nastia and updated from Ulrike  */
-
 dl{
 	display: flex;
 	/* flex-wrap: wrap; */
@@ -350,20 +349,30 @@ dl{
 	padding-left: 15%;
 	padding-right: 15%;
 	width: 100%;
-	
+	background-color: transparent;
+	background-image: linear-gradient(to bottom, rgba(244, 244, 244, 0.2), rgba(244, 244, 244, 1)),
+	url('../images/travel.jpg');
+	background-size: cover;
+	background-position: top;
+	font-family: "Montserrat";	
+	height: 500px;
+	width:100%;
+	position: relative;
 }
 
 dl.faq button {
 	margin: 0;
-	padding: 0;
+	padding-bottom: 0.4em;
 	margin-top: 1em;
 	font-weight: bold;
 	font-size: 110%;
-	background-color: transparent;
+	/*background-color:  #886c6c;*/
+	background-image: linear-gradient(to right, rgba(244, 244, 244, 1),rgb(132, 181, 159,0.2));
 	padding-left: 0.125em;
 	border: thin solid transparent;
 	width:100%;
 	text-align: left;
+	border-radius: 00.25em;
   }
   
   dl dd {
@@ -378,19 +387,21 @@ dl.faq button {
 	font-size: 110%;
 	display: none;
 	background-color: #f4f4f4;
+	border-radius: 00.25em;
   }
   
   dl.faq button:focus {
-	background-color: rgb(132, 181, 159,0.2);
+	background-color: rgb(244, 244, 244,0.8);
   }
   
   dl.faq button:hover {
 	/*text-decoration: underline;*/
-	background-color:rgb(132, 181, 159,0.3);
+	background-color:rgb(244, 244, 244,0.8);
+	background-image: linear-gradient(to right, rgba(244, 244, 244, 1),rgb(132, 181, 159,0.6));
   }
   
   dl.faq button:active {
-	background-color:rgb(132, 181, 159,0.2);
+	background-color:rgb(244, 244, 244,0.8);
   }
   
   dl.faq button[aria-expanded="false"]::before {
