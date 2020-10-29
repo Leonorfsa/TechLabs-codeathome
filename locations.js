@@ -67,14 +67,14 @@ mydata = [
     {
         "name" : "Sweden",
         "town" : "Sweden - Stockholm", 
-        "Entry": "There is an entry ban for non-essential travel to Sweden from countries outside the EU. The entry ban does not apply to citizens of EU/EEA countries, UK, Switzerland, Andorra, Monaco, San Marino and the Vatican, or their families, or for travels to Sweden from the EU/EEA area. Furthermore, the ban does not apply if you or a close relative already live here as a permanent resident or hold a residence permit in Sweden or another EU country, or if you have a national visa to Sweden. You do not need the coronavirus test",
+        "Entry": "There is an entry ban until December 22 for non-essential travel to Sweden from countries outside the EU. The entry ban does not apply to citizens of EU/EEA countries, UK, Switzerland, Andorra, Monaco, San Marino and the Vatican, or their families, or for travels to Sweden from the EU/EEA area. Furthermore, the ban does not apply if you or a close relative already live here as a permanent resident or hold a residence permit in Sweden or another EU country, or if you have a national visa to Sweden. You do not need the coronavirus test",
         "Hygiene": "There is no general requirement to wear a face mask in normal social situations, in public places, in public transport etc.",
         "Activity": "Public gatherings and events may have a maximum of 50 participants. The Swedish Government has decided that restaurants and cafes shall be exempt from the 50-person limit. The change applies from 8 October 2020.",
-        "Departure": "",
-        "HygieneDep": "Masks are necessary during shopping and travelling per public transports.",
-        "Other": "",
+        "Departure": "Please pay close attention to the information given by your airline. Many airline companies require you to wear a face mask on board.",
+        "HygieneDep": "Masks are not necessary during shopping and travelling per public transports.",
+        "Other": "In Sweden, anyone with symptoms can get a PCR test which will determine if there is an active Covid-19 infection. If you are interested in doing a PCR test, contact phone number 1177.  ",
         "Links": "www.krisinformation.se/en/hazards-and-risks/disasters-and-incidents/2020/official-information-on-the-new-coronavirus/visiting-sweden-during-the-covid-19-pandemic",
-        "Dates": "25.Oct, 2020",
+        "Dates": "29.Oct, 2020",
         "https":"n"
     }
 ];
