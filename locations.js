@@ -2,8 +2,8 @@ mydata = [
     {
         "name" : "Germany",
         "town" : "Germany - Berlin",
-        "Entry": "Restricted Entry if you are visiting from a high risk or if you are coming from outside of europe. High risks areas are updated each day depending on current case numbers. If you are coming from such an area you have to quarantine and follow the reporting requirements.",
-        "Hygiene": "Masks are necessary in stores, on shopping streets, during travelling per public transports, cinemas, museums,theaters and similar places. The minimum social distance is 1.5 metres to people from other households. ",
+        "Entry": "Restricted Entry if you are visiting from a high risk area or if you are coming from outside of europe. High risk areas are updated each day depending on current case numbers. If you are coming from such an area you have to quarantine and follow the reporting requirements.",
+        "Hygiene": "Masks are necessary in stores, on shopping streets, during travelling per public transports, cinemas, museums, theaters and similar places. The minimum social distance is 1.5 metres to people from other households. ",
         "Activity": "Many activities are allowed with limited access or additional regulations. From the start of november many places like hotels will be closed for respectively some weeks.",
         "Departure": "For your departure the hygiene regulations for public transports have to be followed.",
         "HygieneDep": "Masks are necessary during shopping, travelling per public transports and in public transport areas (e.g. train station). ",
