@@ -22,20 +22,24 @@
 	<!-- Contact form -->
 	<div class="contact-form" id="contact">
 		<div class="container">
-			<form>
+			<form action="mailto:pandemicnomad@contact.com?subject=Contact Pandemic Nomad" method="post" enctype="text/plain">
 				<div class="row">
 					<div class="col-lg-4 col-md-4 col-sm-12">
 					<h1>Get in Touch</h1>	
 					</div>
 					<div class="col-lg-8 col-md-8 col-sm-12 right">
 					<div class="form-group">
-						<input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
+						<p style="color:#696969;font-size: 18px;">Use the contact form to connect to your mailing advice or mail us directly to pandemicnomad@contact.com! 
+						</p>
 					</div>
 					<div class="form-group">
-						<input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email">
+						<input type="text" class="form-control form-control-lg" placeholder="Your Name" name="name">
 					</div>
 					<div class="form-group">
-						<textarea class="form-control form-control-lg">
+						<input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="mail">
+					</div>
+					<div class="form-group">
+						<textarea class="form-control form-control-lg" name="message">
 							
 						</textarea>
 					</div>
@@ -45,6 +49,7 @@
 			</form>
 		</div>
 	</div>
+
 	
 	<div class=footer>
 		<small>&copy; Copyright 2020, TechLabs WebDev 9 Project</small>
