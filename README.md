@@ -17,5 +17,7 @@ This solution can have enormous impact in today’s world, as information regard
 
 ## Members
 Anastasiya Samoilenka
+
 Leonor Sá
+
 Ulrike Schäfer
