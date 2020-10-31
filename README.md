@@ -1,4 +1,4 @@
-# Final project for the Digital Shapers #codeathome program from TechLabs with the theme Living in the new normal. 
+# Final project for the Digital Shapers #codeathome program from TechLabs with the theme "Living in the new normal"
 
 This project was developed as a solution to solve one of the major issues with the constantly changing information on covid-19 - the lack of a platform for users to get updated information on another country situation. This is specially valuable if someone has to travel to another country but doesn't know the rules applying there. 
 
