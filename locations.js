@@ -7,7 +7,7 @@ mydata = [
         "Activity": "Many activities are allowed with limited access or additional regulations. From the start of november many places like hotels will be closed for respectively some weeks.",
         "Departure": "For your departure the hygiene regulations for public transports have to be followed.",
         "HygieneDep": "Masks are necessary during shopping, travelling per public transports and in public transport areas (e.g. train station). ",
-        "Other": "As the current 7-day-inzidenz is over 209,1 per 100.000 residents (which is over the treshold 50) the regulations have to be tightened (28.Oct, 2020).",
+        "Other": "As the current 7-day-inzidenz is over 210,4 per 100.000 residents (which is over the treshold 50) the regulations have to be tightened (28.Oct, 2020).",
         "Links": "berlin.de/corona/en/",
         "Dates": "29.Oct, 2020",
         "https":"y"
