@@ -7,7 +7,7 @@ mydata = [
         "Activity": "Many activities are allowed with limited access or additional regulations. From the start of november many places like hotels will be closed for respectively some weeks.",
         "Departure": "For your departure the hygiene regulations for public transports have to be followed.",
         "HygieneDep": "Masks are necessary during shopping, travelling per public transports and in public transport areas (e.g. train station). ",
-        "Other": "As the current 7-day-inzidenz is over 144.3 per 100.000 residents (which is over the treshold 50) the regulations have to be tightened (28.Oct, 2020).",
+        "Other": "As the current 7-day-inzidenz is over 209,1 per 100.000 residents (which is over the treshold 50) the regulations have to be tightened (28.Oct, 2020).",
         "Links": "berlin.de/corona/en/",
         "Dates": "29.Oct, 2020",
         "https":"y"
@@ -20,9 +20,9 @@ mydata = [
         "Activity": "Many activities are allowed with limited access or additional regulations. From the start of november many places like hotels will be closed for respectively some weeks.",
         "Departure": "For your departure the hygiene regulations for public transports have to be followed.",
         "HygieneDep": "The minimum social distance is 1.5 metres to people from other households. Mouth-and-nose coverings in enclosed spaces are necessary, examples are: buildings with public access like shopping centers, public transport, shops and buisnesses. Outdoors mouth-and-nose coverings are required at local public transport stops, in railway stations and in highly frequented city centre area. ",
-        "Other": "As the current 7-day-inzidenz is  63,2 (which is over 50 per 100.000 residents) the regulations have to be tightened (28.Oct, 2020).",
+        "Other": "As the current 7-day-inzidenz is  104 (which is over 50 per 100.000 residents) the regulations have to be tightened (28.Oct, 2020).",
         "Links": "dresden.de/en/city/corona_en.php",
-        "Dates": "29.Oct, 2020",
+        "Dates": "16.Nov, 2020",
         "https":"y"
     },
     {
@@ -35,7 +35,7 @@ mydata = [
         "HygieneDep": "Masks are necessary in closed public spaces and travelling per public transports. Required 2 meters distancing at all times. ",
         "Other": "Flying to and from Portugal is allowed to countries that integrate the European Union; Associated countries of the Schengen Area, United Kingdom, Australia, Canada, China, Georgia, Japan, Morocco, New Zealand, Rwanda, Thailand, Tunisia, Uruguay and South Korea.",
         "Links": "visitmadeira.pt/en-gb/homepage?AreaId=16",
-        "Dates": "24.Oct, 2020",
+        "Dates": "16.Nov, 2020",
         "https":"n"
     },
     {
